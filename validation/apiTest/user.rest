@@ -1,0 +1,20 @@
+@HOST = http://localhost:8000
+
+###
+POST {{HOST}}/user_signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "userfullname": "Shubham",
+    "username": "shubham",
+    "password": "shubham@123"
+}
+
+###
+POST {{HOST}}/user_login_check HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "shubham",
+    "password": "shubham@123"
+}
